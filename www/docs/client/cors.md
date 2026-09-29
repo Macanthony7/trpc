@@ -21,7 +21,7 @@ export type AppRouter = typeof appRouter;
 import { createTRPCClient, httpBatchLink } from '@trpc/client';
 import type { AppRouter } from './server';
 
-const client = createTRPCClient<AppRouter>({
+const client = createTRPCC<AppRouter>({
   links: [
     httpBatchLink({
       url: 'YOUR_SERVER_URL',
