@@ -1,4 +1,4 @@
-import { createTRPCProxyClient } from '@trpc/client';
+import { createTRPCClient } from '@trpc/client';
 import type { inferRouterInputs } from '@trpc/server';
 import { experimental_standaloneMiddleware, initTRPC } from '@trpc/server';
 import * as z from 'zod';
@@ -65,7 +65,7 @@ test('Fix #4947: standalone middlewares -- inputs are merged properly when using
     'valueA: a, valueB: b, extraProp: extra, valueAUppercase: A, valueBUppercase: B',
   );
 
-  const client = createTRPCProxyClient<typeof router>({
+  const client = createTRPCClient<typeof router>({
     links: [],
   });
 
