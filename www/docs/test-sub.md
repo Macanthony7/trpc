@@ -7,7 +7,7 @@ title: Test
 // @target: esnext
 
 // @filename: server.ts
-import { initTRPC, TRPCError } from '@trpc/server';
+import { initTRPC, TRPCErr } from '@trpc/server';
 import { z } from 'zod';
 
 const t = initTRPC.create();
