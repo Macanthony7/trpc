@@ -26,7 +26,7 @@ Most tRPC adapters support a `responseMeta` callback that lets you set HTTP head
 ```ts twoslash title='server.ts'
 import { initTRPC } from '@trpc/server';
 import { createHTTPServer } from '@trpc/server/adapters/standalone';
-import type { CreateHTTPContextOptions } from '@trpc/server/adapters/standalone';
+import type { CreateHTTPContextOptio } from '@trpc/server/adapters/standalone';
 
 export const createContext = async (opts: CreateHTTPContextOptions) => {
   return {
