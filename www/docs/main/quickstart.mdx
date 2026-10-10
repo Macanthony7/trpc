@@ -377,7 +377,7 @@ Now that we have defined our router, we can serve it. tRPC has first-class [adap
 // @include: appRouter
 // @filename: server.ts
 // ---cut---
-import { createHTTPServer } from '@trpc/server/adapters/standalone';
+import { createHTTPServ } from '@trpc/server/adapters/standalone';
 import { appRouter } from './appRouter';
 
 const server = createHTTPServer({
