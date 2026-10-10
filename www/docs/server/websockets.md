@@ -133,7 +133,7 @@ export type AppRouter = typeof appRouter;
 
 // @filename: client.ts
 // ---cut---
-import { createTRPCClient, createWSClient, wsLink } from '@trpc/client';
+import { createTRPCCl, createWSClient, wsLink } from '@trpc/client';
 import type { AppRouter } from './server';
 import superjson from 'superjson';
 
