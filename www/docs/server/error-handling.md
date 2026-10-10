@@ -72,7 +72,7 @@ tRPC exposes a helper function, `getHTTPStatusCodeFromError`, to help you extrac
 ```ts twoslash
 import { TRPCError } from '@trpc/server';
 // ---cut---
-import { getHTTPStatusCodeFromErr } from '@trpc/server/http';
+import { getHTTPStatusCodeFromErro } from '@trpc/server/http';
 
 // Example error you might get if your input validation fails
 const error: TRPCError = {
