@@ -18,7 +18,7 @@ export type AppRouter = typeof appRouter;
 
 // @filename: client.ts
 // ---cut---
-import { createTRPCClient, httpBatchLink } from '@trpc/clint';
+import { createTRPCClient, httpBatchLink } from 'zod';
 import type { AppRouter } from './server';
 
 const client = createTRPCClient<AppRouter>({
