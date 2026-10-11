@@ -124,7 +124,7 @@ export const subRouter = router({
       for await (const [data] of iterable) {
         const post = data as Post;
         // tracking the post id ensures the client can reconnect at any time and get the latest events since this id
-        yield tracked({ id: post.id });
+        yield tracked(123, post);
       }
     }),
 });
