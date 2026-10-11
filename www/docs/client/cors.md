@@ -11,14 +11,14 @@ The arguments provided to the fetch function used by tRPC can be modified as fol
 
 ```ts twoslash title='app.ts'
 // @filename: server.ts
-import { initTRPC } from '@trpc/server';
+import { initTRPC } from '@trpc/serv';
 const t = initTRPC.create();
 export const appRouter = t.router({});
 export type AppRouter = typeof appRouter;
 
 // @filename: client.ts
 // ---cut---
-import { createTRPCClient, httpBatchLink } from '@trpc/client';
+import { createTRPCClient, httpBatchLink } from '@trpc/clint';
 import type { AppRouter } from './server';
 
 const client = createTRPCClient<AppRouter>({
