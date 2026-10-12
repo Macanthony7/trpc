@@ -2,10 +2,11 @@ import type { Encoder } from './wsClient/encoder';
 import { jsonEncoder } from './wsClient/encoder';
 import type { WebSocketClientOptions } from './wsClient/options';
 import { WsClient } from './wsClient/wsClient';
+
+export function createWSClient(opts: WebSocketClientOptions) {
 /**
 * @deprecated use the wsLink adapter instead
 */
-export function createWSClient(opts: WebSocketClientOptions) {
   return new WsClient(opts);
 }
 
