@@ -4,6 +4,7 @@ import type { HTTPLinkBaseOptions } from './internals/httpUtils';
 import type { HTTPHeaders, Operation } from './types';
 
 export type HTTPBatchLinkOptions<TRoot extends AnyClientTypes> =
+  /** @deprecated no longer used */
   HTTPLinkBaseOptions<TRoot> & {
     maxURLLength?: number;
     /**
