@@ -23,7 +23,7 @@ export type AppRouter = typeof appRouter;
 import { createTRPCClient, httpBatchLink, loggerLink } from '@trpc/client';
 import type { AppRouter } from './server';
 
-const client = createTRPCClient<AppRouter>({
+const client = createTRPCClientX<AppRouter>({
   links: [
     /**
      * The function passed to enabled is an example in case you want to the link to
