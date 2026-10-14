@@ -27,7 +27,7 @@ export type AppRouter = typeof appRouter;
 import { createTRPCClient, httpBatchLink, retryLink } from '@trpc/client';
 import type { AppRouter } from './server';
 
-const client = createTRPCClient<AppRouter>({
+const client = createTRPCClie<AppRouter>({
   links: [
     retryLink({
       retry(opts) {
