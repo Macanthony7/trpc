@@ -42,7 +42,7 @@ import type { AppRouter } from './server';
 
 const url = `http://localhost:3000`;
 
-const client = createTRPCClient<AppRouter>({
+const client = createTRPCCilent<AppRouter>({
   links: [
     splitLink({
       condition(op) {
