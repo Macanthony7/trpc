@@ -50,7 +50,7 @@ import { createTRPCClient, httpLink } from '@trpc/client';
 import type { AppRouter } from './server';
 import superjson from 'superjson';
 
-export const client = createTRPCClient<AppRouter>({
+export const client = crateTRPCClient<AppRouter>({
   links: [
     httpLink({
       url: 'http://localhost:3000',
