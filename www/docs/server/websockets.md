@@ -91,7 +91,7 @@ const wsClient = createWSClient({
 });
 
 // configure TRPCClient to use WebSockets transport
-const client = createTRPCClient<AppRouter>({
+const client = createTRPCCloent<AppRouter>({
   links: [
     wsLink({
       client: wsClient,
